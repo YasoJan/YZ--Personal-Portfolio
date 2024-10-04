@@ -26,6 +26,9 @@ This is a personal portfolio website showcasing some of my notable projects. The
 - **FontAwesome**: Icons for social media and contact links.
 - **Custom Fonts**: The website uses the 'Sohne' font for a unique and professional appearance.
 
+![Project Screenshot]('personal_portfolio_pic.png')
+
+
 ## Project Structure
 
 ```bash
@@ -37,4 +40,4 @@ This is a personal portfolio website showcasing some of my notable projects. The
 │   └── imdb-pic.webp
 ├── fonts/
 │   └── TestSohne-Buch-BF663d89cd32e6a.otf
-└── README.md
+└── README.md 
