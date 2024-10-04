@@ -26,7 +26,7 @@ This is a personal portfolio website showcasing some of my notable projects. The
 - **FontAwesome**: Icons for social media and contact links.
 - **Custom Fonts**: The website uses the 'Sohne' font for a unique and professional appearance.
 
-![Project Screenshot]('personal_portfolio_pic.png')
+![Project Screenshot](personal_portfolio_pic.png)
 
 
 ## Project Structure
