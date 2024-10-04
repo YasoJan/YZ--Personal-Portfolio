@@ -1,0 +1,398 @@
+*
+{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Sohne'; /* Custom name to use in CSS */
+    src: url('fonts/TestSohne-Buch-BF663d89cd32e6a.otf') format('opentype'); /* Path to the .otf file */
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+}
+html
+{
+	font-size: 62.5%;
+	font-family: "Sohne";
+	font-weight: 400;
+	font-style: normal;
+}
+body
+{
+
+	margin: 0;
+	padding: 0;
+	background-color:;
+
+}
+/* #171717 for greyish chatgpt color for regular nav bar items then black then white when hovering*/
+#nav-bar
+{
+	display: grid;
+	grid-template-column: repeat(20, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	/*
+	background: linear-gradient(90deg, #FCCF31 , #F55555);
+	*/
+	background: black;
+	height: 5rem;
+	position: fixed;
+	width: 100vw;
+
+    top: 0;
+    z-index: 1000;
+
+
+}
+.nav-bar-list
+{
+	display: grid;
+	grid-column: 15/20;
+	grid-row: 2;
+	font-size: 1.3rem;
+	line-height: 18px;
+	list-style-type: none;
+	color: white;
+	
+}
+.contact
+{
+	display: grid;
+	grid-column: 15/20;
+	grid-row: 1;
+	justify-content: flex-start;
+}
+.work
+{
+	display: grid;
+	grid-column: 10/15;
+	grid-row: 1;
+	justify-content: flex-start;
+}
+.about
+{
+	display: grid;
+	grid-column: 5/10;
+	grid-row: 1;
+	justify-content: flex-start;
+}
+
+.about:hover, .work:hover, .contact:hover, a:hover
+{
+	color: white;
+	text-decoration: none;
+  	
+}
+.about, .work, .contact, a
+{
+	transition: background-color 0.5s;
+	color: rgb(140, 140, 140);
+	text-decoration: none;
+	transition: background-color .1s;
+}
+
+
+.welcome-section, .main-section, .contact-section
+{
+	height: 100vh;
+	width: 100vw;
+	background: #080808;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.name-intro, .job-intro, .intro, .quote
+{
+	
+	display: flex;
+	color: white;
+	text-align: center;
+	
+    /*
+    background: linear-gradient(90deg, #FCCF31 , #F55555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    color: white;
+    line-height: normal;
+    margin: 1rem;
+ 
+    
+}
+.name-intro, .intro, .quote
+{
+	font-size: 5.4rem;
+	line-height: 5.9rem;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: -1.0788px;
+	font-feature-settings: normal;
+	font-variation-settings: normal;
+	text-wrap: balance;
+
+
+	
+}
+
+.job-intro, .quote-author
+{
+	font-weight: 100;
+	color: white;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+.intro 
+{
+	font-size: 3rem;
+}
+.project-product-landing-page
+{
+	background: #080808;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*
+ 	border: 2px solid green;
+ 	*/
+	width: 100vw;
+	height: 100vh;
+	gap: 0rem;
+
+}
+.quote
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	font-size: 5.4rem;
+	justify-items: center;
+	align-items: center;
+}
+.product-landing-pic, .survey-form-pic, .imdb-pic
+{
+	display: flex;
+	flex-direction: column;
+	max-width: 75%; /* Ensures it scales down to fit its container */
+   	height: auto;    /* Maintains the aspect ratio */
+    /*
+ 	border: 2px solid green;
+ 	*/
+    justify-items: center;
+    align-self: center;
+ 	margin-bottom: 5rem;
+ 	border-radius: 1%;
+
+
+}
+
+.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover, .survey-link:hover, .imdb-link:hover
+{
+	color: white;
+	display: flex;
+	text-decoration: none;
+  	justify-content: center;
+  	align-self: center;
+}
+.product-link p, .survey-link p, .imdb-link p, .product-link, .survey-link, .imdb-link
+{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	transition: background-color 0.5s;
+	color: rgb(140, 140, 140);
+	text-decoration: none;
+	transition: background-color .1s;
+}
+
+.product-landing-div
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+ 	border: 2px solid green;
+ 	*/
+	justify-content: center;
+	background-color: rgb(23, 23, 23);
+	align-self: center;
+	width: 50rem;
+	height: 50rem;
+	border-radius: 1%;
+}
+.product-landing-text
+{
+	color: white;
+	display: flex;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	justify-self: center;
+	background-color: #171717;
+	/*
+ 	border: 2px solid green;
+ 	*/
+	align-self: center;
+
+}
+
+.project-form, .project-imdb
+{
+	background: #080808;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*
+ 	border: 2px solid green;
+ 	*/
+	width: 100vw;
+	height: 100vh;
+	gap: 0rem;
+}
+.form, .imdb
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	flex-directon: column;
+ 	/*
+ 	border: 2px solid green;
+ 	*/
+	justify-content: center;
+	background-color: rgb(23, 23, 23);
+	align-self: center;
+	width: 50rem;
+	height: 50rem;
+	border-radius: 3%;
+}
+.form-text, .imdb-text
+{
+	color: white;
+	display: flex;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	justify-self: center;
+	background-color: #171717;
+	align-self: center;
+
+	/*
+ 	border: 2px solid green;
+ 	*/
+}
+.social-media
+{
+	display: flex;
+	color: white;
+	grid-column: 5/17;
+	grid-row: 10;
+
+	font-size: 5rem;
+
+
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+
+}
+i 
+{
+	display: flex;
+	justify-self: center;
+	font-size: 3rem;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	justify-items: center;
+	color: white;
+
+
+	
+}
+
+.quote
+{
+	
+	display:grid;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	row-gap: 0;
+	grid-column:1/21;
+	grid-row: 7;
+	row-gap: 0;
+}
+.quote-author
+{
+	
+	display:grid;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	row-gap: 0;
+	grid-column:1/21;
+	grid-row: 9;
+}
+.contact-section
+{
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	 grid-template-rows: repeat(12, auto); /* Example of 3 rows with a set height */
+	row-gap: 0;
+}
+footer
+{
+
+	display: grid;
+	grid-row: 12;
+  	grid-column: 2/20;
+  	align-self: flex-end;
+	
+}
+
+.trademark
+{
+	color: white;
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-self: flex-start;
+	align-self: flex-end;
+
+  	
+
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+  
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+  
+}
+
+/* Small laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+  
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1025px) {
+  html {
+    font-size: 68.75%; /* 1rem = 11px */
+  }
+  
+}
+
+
