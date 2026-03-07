@@ -17,10 +17,11 @@ html
 }
 body
 {
-
+	background-color: black;
 	margin: 0;
 	padding: 0;
-	background-color:;
+	display: flex;
+	flex-direction: column;
 
 }
 /* #171717 for greyish chatgpt color for regular nav bar items then black then white when hovering*/
@@ -37,8 +38,8 @@ body
 	position: fixed;
 	width: 100vw;
 
-    top: 0;
-    z-index: 1000;
+  top: 0;
+  z-index: 1000;
 
 
 }
@@ -79,7 +80,6 @@ body
 {
 	color: white;
 	text-decoration: none;
-  	
 }
 .about, .work, .contact, a
 {
@@ -99,26 +99,16 @@ body
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-
 }
 
 .name-intro, .job-intro, .intro, .quote
 {
-	
 	display: flex;
 	color: white;
 	text-align: center;
-	
-    /*
-    background: linear-gradient(90deg, #FCCF31 , #F55555);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    */
-    color: white;
-    line-height: normal;
-    margin: 1rem;
- 
-    
+  color: white;
+  line-height: normal;
+  margin: 1rem;  
 }
 .name-intro, .intro, .quote
 {
@@ -129,9 +119,6 @@ body
 	font-feature-settings: normal;
 	font-variation-settings: normal;
 	text-wrap: balance;
-
-
-	
 }
 
 .job-intro, .quote-author
@@ -145,55 +132,28 @@ body
 {
 	font-size: 3rem;
 }
-.project-product-landing-page
-{
-	background: #080808;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	/*
- 	border: 2px solid green;
- 	*/
-	width: 100vw;
-	height: 100vh;
-	gap: 0rem;
 
-}
-.quote
-{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	font-size: 5.4rem;
-	justify-items: center;
-	align-items: center;
-}
-.product-landing-pic, .survey-form-pic, .imdb-pic
+.product-landing-pic, .survey-form-pic, .imdb-pic, .cloned-site-pic, .skywatch-pic, .missionOps-pic, .rps-pic
 {
 	display: flex;
 	flex-direction: column;
 	max-width: 75%; /* Ensures it scales down to fit its container */
-   	height: auto;    /* Maintains the aspect ratio */
-    /*
- 	border: 2px solid green;
- 	*/
-    justify-items: center;
-    align-self: center;
+  height: auto;    /* Maintains the aspect ratio */
+  justify-items: center;
+  align-self: center;
  	margin-bottom: 5rem;
  	border-radius: 1%;
-
-
 }
 
-.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover, .survey-link:hover, .imdb-link:hover
+.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover p, .survey-link:hover p, .imdb-link:hover p, .cloned-site-link:hover p, .skywatch-link:hover p, .missionOps-link:hover p, .rps-link:hover p
 {
 	color: white;
 	display: flex;
 	text-decoration: none;
-  	justify-content: center;
-  	align-self: center;
+  justify-content: center;
+  align-self: center;
 }
-.product-link p, .survey-link p, .imdb-link p, .product-link, .survey-link, .imdb-link
+.product-link p, .survey-link p, .imdb-link p, .product-link p, .survey-link p, .imdb-link p, .cloned-site-link p, .skywatch-link p, .missionOps-link p, .rps-link p
 {
 	display: flex;
 	align-self: center;
@@ -203,61 +163,21 @@ body
 	text-decoration: none;
 	transition: background-color .1s;
 }
-
-.product-landing-div
-{
-	display: flex;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	/*
- 	border: 2px solid green;
- 	*/
-	justify-content: center;
-	background-color: rgb(23, 23, 23);
-	align-self: center;
-	width: 50rem;
-	height: 50rem;
-	border-radius: 1%;
-}
-.product-landing-text
-{
-	color: white;
-	display: flex;
-	font-size: 1.8rem;
-	line-height: 2.2rem;
-	justify-self: center;
-	background-color: #171717;
-	/*
- 	border: 2px solid green;
- 	*/
-	align-self: center;
-
-}
-
-.project-form, .project-imdb
+.project-product-landing-page, .project-form, .project-imdb, .project-cloned-site, .project-skywatch, .project-missionOps, .project-rps
 {
 	background: #080808;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	/*
- 	border: 2px solid green;
- 	*/
+	flex-direction: column;
 	width: 100vw;
 	height: 100vh;
-	gap: 0rem;
 }
-.form, .imdb
+.product-landing-page, .form, .imdb, .cloned-site, .skywatch, .missionOps, .rps
 {
 	display: flex;
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
-	flex-directon: column;
- 	/*
- 	border: 2px solid green;
- 	*/
+	flex-direction: column;
 	justify-content: center;
 	background-color: rgb(23, 23, 23);
 	align-self: center;
@@ -265,7 +185,7 @@ body
 	height: 50rem;
 	border-radius: 3%;
 }
-.form-text, .imdb-text
+.product-landing-text, .form-text, .imdb-text, .cloned-site-text, .skywatch-text, .missionOps-text, .rps-text
 {
 	color: white;
 	display: flex;
@@ -274,29 +194,16 @@ body
 	justify-self: center;
 	background-color: #171717;
 	align-self: center;
-
-	/*
- 	border: 2px solid green;
- 	*/
 }
-.social-media
-{
+
+.project-container{
 	display: flex;
-	color: white;
-	grid-column: 5/17;
-	grid-row: 10;
-
-	font-size: 5rem;
-
-
 	justify-content: center;
-	justify-content: space-between;
 	align-items: center;
-	flex-direction: row;
-
+	flex-direction: column;
 }
-i 
-{
+
+i {
 	display: flex;
 	justify-self: center;
 	font-size: 3rem;
@@ -305,49 +212,28 @@ i
 	flex-direction: row;
 	justify-items: center;
 	color: white;
-
-
-	
 }
 
-.quote
-{
-	
-	display:grid;
-	flex-direction: row;
-	justify-content: center;
-	align-self: center;
-	row-gap: 0;
-	grid-column:1/21;
-	grid-row: 7;
-	row-gap: 0;
-}
-.quote-author
-{
-	
-	display:grid;
-	flex-direction: column;
-	justify-content: center;
-	align-self: center;
-	row-gap: 0;
-	grid-column:1/21;
-	grid-row: 9;
-}
 .contact-section
 {
-	display: grid;
-	grid-template-columns: repeat(20, 1fr);
-	 grid-template-rows: repeat(12, auto); /* Example of 3 rows with a set height */
-	row-gap: 0;
+	display: flex;
+	display: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0;
+}
+
+.social-media{
+	display: flex;
+	gap: 5rem;
+	margin-top: 3rem;
 }
 footer
 {
-
-	display: grid;
-	grid-row: 12;
-  	grid-column: 2/20;
-  	align-self: flex-end;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .trademark
@@ -358,9 +244,6 @@ footer
 	flex-direction: row;
 	justify-self: flex-start;
 	align-self: flex-end;
-
-  	
-
 }
 
 /* Mobile devices (up to 480px) */
