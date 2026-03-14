@@ -27,9 +27,8 @@ body
 /* #171717 for greyish chatgpt color for regular nav bar items then black then white when hovering*/
 #nav-bar
 {
-	display: grid;
-	grid-template-column: repeat(20, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	display: flex;
+	
 	/*
 	background: linear-gradient(90deg, #FCCF31 , #F55555);
 	*/
@@ -37,7 +36,6 @@ body
 	height: 5rem;
 	position: fixed;
 	width: 100vw;
-
   top: 0;
   z-index: 1000;
 
@@ -45,43 +43,40 @@ body
 }
 .nav-bar-list
 {
-	display: grid;
-	grid-column: 15/20;
-	grid-row: 2;
+	display: flex;
 	font-size: 1.3rem;
 	line-height: 18px;
 	list-style-type: none;
 	color: white;
-	
-}
-.contact
-{
-	display: grid;
-	grid-column: 15/20;
-	grid-row: 1;
+	justify-content: space-between;
+	padding-left: 2rem;
+	width: 100%;
 	justify-content: flex-start;
-}
-.work
-{
-	display: grid;
-	grid-column: 10/15;
-	grid-row: 1;
-	justify-content: flex-start;
-}
-.about
-{
-	display: grid;
-	grid-column: 5/10;
-	grid-row: 1;
-	justify-content: flex-start;
+	gap: 6rem;
 }
 
-.about:hover, .work:hover, .contact:hover, a:hover
+.nav-left-side{
+	display: flex;
+	justify-content: flex-start;
+	width: 50%;
+	gap: 6rem;
+	padding-left: 2rem;
+}
+
+.nav-right-side{
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+	gap: 6rem;
+	padding-right: 2rem;
+}
+
+ a:hover
 {
 	color: white;
 	text-decoration: none;
 }
-.about, .work, .contact, a
+a
 {
 	transition: background-color 0.5s;
 	color: rgb(140, 140, 140);
@@ -90,7 +85,7 @@ body
 }
 
 
-.welcome-section, .main-section, .contact-section
+.welcome-section, .main-section, .contact-section, .data-engineering-section, .full-stack-section, .ml-section
 {
 	height: 100vh;
 	width: 100vw;
@@ -133,7 +128,7 @@ body
 	font-size: 3rem;
 }
 
-.product-landing-pic, .survey-form-pic, .imdb-pic, .cloned-site-pic, .skywatch-pic, .missionOps-pic, .rps-pic
+.product-landing-pic, .survey-form-pic, .imdb-pic, .cloned-site-pic, .skywatch-pic, .missionOps-pic, .rps-pic, .etch-a-sketch-pic, .ios-calc-pic, .Stroke-Data-Analysis-pic
 {
 	display: flex;
 	flex-direction: column;
@@ -145,7 +140,7 @@ body
  	border-radius: 1%;
 }
 
-.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover p, .survey-link:hover p, .imdb-link:hover p, .cloned-site-link:hover p, .skywatch-link:hover p, .missionOps-link:hover p, .rps-link:hover p
+.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover p, .survey-link:hover p, .imdb-link:hover p, .cloned-site-link:hover p, .skywatch-link:hover p, .missionOps-link:hover p, .rps-link:hover p, .etch-a-sketch-link:hover p, .ios-calc-link:hover p, .Stroke-Data-Analysis:hover p
 {
 	color: white;
 	display: flex;
@@ -153,7 +148,7 @@ body
   justify-content: center;
   align-self: center;
 }
-.product-link p, .survey-link p, .imdb-link p, .product-link p, .survey-link p, .imdb-link p, .cloned-site-link p, .skywatch-link p, .missionOps-link p, .rps-link p
+.product-link p, .survey-link p, .imdb-link p, .product-link p, .survey-link p, .imdb-link p, .cloned-site-link p, .skywatch-link p, .missionOps-link p, .rps-link p, .etch-a-sketch-link p, .ios-calc-link p, .Stroke-Data-Analysis-link p
 {
 	display: flex;
 	align-self: center;
@@ -163,7 +158,7 @@ body
 	text-decoration: none;
 	transition: background-color .1s;
 }
-.project-product-landing-page, .project-form, .project-imdb, .project-cloned-site, .project-skywatch, .project-missionOps, .project-rps
+.project-product-landing-page, .project-form, .project-imdb, .project-cloned-site, .project-skywatch, .project-missionOps, .project-rps, .project-etch-a-sketch, .project-ios-calc, .project-Stroke-Data-Analysis
 {
 	background: #080808;
 	display: flex;
@@ -171,7 +166,7 @@ body
 	width: 100vw;
 	height: 100vh;
 }
-.product-landing-page, .form, .imdb, .cloned-site, .skywatch, .missionOps, .rps
+.product-landing-page, .form, .imdb, .cloned-site, .skywatch, .missionOps, .rps, .etch-a-sketch, .ios-calc, .Stroke-Data-Analysis
 {
 	display: flex;
 	flex-direction: column;
@@ -185,7 +180,7 @@ body
 	height: 50rem;
 	border-radius: 3%;
 }
-.product-landing-text, .form-text, .imdb-text, .cloned-site-text, .skywatch-text, .missionOps-text, .rps-text
+.product-landing-text, .form-text, .imdb-text, .cloned-site-text, .skywatch-text, .missionOps-text, .rps-text, .etch-a-sketch-text, .ios-calc-text, .Stroke-Data-Analysis-text
 {
 	color: white;
 	display: flex;
