@@ -238,3 +238,32 @@ footer
 	align-self: flex-end;
 }
 
+/* Hide the blocker by default */
+#mobile-blocker {
+  display: none;
+}
+
+/* Show it only on screens smaller than a laptop (1024px) */
+@media (max-width: 1023px) {
+  #mobile-blocker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    z-index: 9999; /* Ensures it stays on top of everything */
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Hide the rest of your site so it doesn't peek through */
+  body > *:not(#mobile-blocker) {
+    display: none;
+  }
+}
