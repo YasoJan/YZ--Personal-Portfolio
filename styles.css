@@ -28,18 +28,15 @@ body
 #nav-bar
 {
 	display: flex;
-	
 	/*
 	background: linear-gradient(90deg, #FCCF31 , #F55555);
 	*/
 	background: black;
 	height: 5rem;
 	position: fixed;
-	width: 100vw;
+	width: 100%;
   top: 0;
   z-index: 1000;
-
-
 }
 .nav-bar-list
 {
@@ -240,37 +237,4 @@ footer
 	justify-self: flex-start;
 	align-self: flex-end;
 }
-
-/* Mobile devices (up to 480px) */
-@media (max-width: 480px) {
-  html {
-    font-size: 50%; /* 1rem = 8px */
-  }
-  
-}
-
-/* Tablets (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  html {
-    font-size: 56.25%; /* 1rem = 9px */
-  }
-  
-}
-
-/* Small laptops (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  html {
-    font-size: 62.5%; /* 1rem = 10px */
-  }
-  
-}
-
-/* Desktops (1025px and up) */
-@media (min-width: 1025px) {
-  html {
-    font-size: 68.75%; /* 1rem = 11px */
-  }
-  
-}
-
 
