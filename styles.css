@@ -128,7 +128,7 @@ a
 	font-size: 3rem;
 }
 
-.product-landing-pic, .survey-form-pic, .imdb-pic, .cloned-site-pic, .skywatch-pic, .missionOps-pic, .rps-pic, .etch-a-sketch-pic, .ios-calc-pic, .Stroke-Data-Analysis-pic
+.product-landing-pic, .survey-form-pic, .imdb-pic, .cloned-site-pic, .skywatch-pic, .missionOps-pic, .rps-pic, .etch-a-sketch-pic, .ios-calc-pic, .Stroke-Data-Analysis-pic, .yz-lib-pic
 {
 	display: flex;
 	flex-direction: column;
@@ -140,7 +140,7 @@ a
  	border-radius: 1%;
 }
 
-.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover p, .survey-link:hover p, .imdb-link:hover p, .cloned-site-link:hover p, .skywatch-link:hover p, .missionOps-link:hover p, .rps-link:hover p, .etch-a-sketch-link:hover p, .ios-calc-link:hover p, .Stroke-Data-Analysis:hover p
+.product-link:hover p, .survey-link:hover p, .imdb-link:hover p,  .product-link:hover p, .survey-link:hover p, .imdb-link:hover p, .cloned-site-link:hover p, .skywatch-link:hover p, .missionOps-link:hover p, .rps-link:hover p, .etch-a-sketch-link:hover p, .ios-calc-link:hover p, .Stroke-Data-Analysis:hover p, .yz-lib:hover p
 {
 	color: white;
 	display: flex;
@@ -148,7 +148,7 @@ a
   justify-content: center;
   align-self: center;
 }
-.product-link p, .survey-link p, .imdb-link p, .product-link p, .survey-link p, .imdb-link p, .cloned-site-link p, .skywatch-link p, .missionOps-link p, .rps-link p, .etch-a-sketch-link p, .ios-calc-link p, .Stroke-Data-Analysis-link p
+.product-link p, .survey-link p, .imdb-link p, .product-link p, .survey-link p, .imdb-link p, .cloned-site-link p, .skywatch-link p, .missionOps-link p, .rps-link p, .etch-a-sketch-link p, .ios-calc-link p, .Stroke-Data-Analysis-link p, .yz-lib-link p
 {
 	display: flex;
 	align-self: center;
@@ -158,7 +158,7 @@ a
 	text-decoration: none;
 	transition: background-color .1s;
 }
-.project-product-landing-page, .project-form, .project-imdb, .project-cloned-site, .project-skywatch, .project-missionOps, .project-rps, .project-etch-a-sketch, .project-ios-calc, .project-Stroke-Data-Analysis
+.project-product-landing-page, .project-form, .project-imdb, .project-cloned-site, .project-skywatch, .project-missionOps, .project-rps, .project-etch-a-sketch, .project-ios-calc, .project-Stroke-Data-Analysis, .project-yz-lib
 {
 	background: #080808;
 	display: flex;
@@ -166,7 +166,7 @@ a
 	width: 100vw;
 	height: 100vh;
 }
-.product-landing-page, .form, .imdb, .cloned-site, .skywatch, .missionOps, .rps, .etch-a-sketch, .ios-calc, .Stroke-Data-Analysis
+.product-landing-page, .form, .imdb, .cloned-site, .skywatch, .missionOps, .rps, .etch-a-sketch, .ios-calc, .Stroke-Data-Analysis, .yz-lib
 {
 	display: flex;
 	flex-direction: column;
@@ -180,7 +180,7 @@ a
 	height: 50rem;
 	border-radius: 3%;
 }
-.product-landing-text, .form-text, .imdb-text, .cloned-site-text, .skywatch-text, .missionOps-text, .rps-text, .etch-a-sketch-text, .ios-calc-text, .Stroke-Data-Analysis-text
+.product-landing-text, .form-text, .imdb-text, .cloned-site-text, .skywatch-text, .missionOps-text, .rps-text, .etch-a-sketch-text, .ios-calc-text, .Stroke-Data-Analysis-text, .yz-lib-text
 {
 	color: white;
 	display: flex;
